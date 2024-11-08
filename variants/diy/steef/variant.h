@@ -31,21 +31,22 @@
 // #define SDCARD_CS 6
 
 // LORA SPI
-#define LORA_SCK -1
-#define LORA_MISO -1
-#define LORA_MOSI -1
-#define LORA_CS -1
+#define USE_RF95 //Wrapper for SX1278 Lora module
 
-// LORA MODULES
-#define USE_SX1262
+#undef LORA_SCK
+#undef LORA_MISO
+#undef LORA_MOSI
+#undef LORA_CS
 
-// LORA CONFIG
-#define SX126X_CS LORA_CS
-#define SX126X_DIO1 -1
-#define SX126X_DIO2_AS_RF_SWITCH
-#define SX126X_BUSY -1
-#define SX126X_RESET -1
-#define SX126X_RXEN -1
-#define SX126X_TXEN RADIOLIB_NC // Assuming that DIO2 is connected to TXEN pin
+#define LORA_SCK 12
+#define LORA_MISO 13
+#define LORA_MOSI 11
+#define LORA_CS 9
+
+#define LORA_RESET 8
+#define LORA_DIO0 3 // IRQ
+#define LORA_DIO1 18 //RADIOLIB_NC?
+#define LORA_DIO2 RADIOLIB_NC  //NC?
+#define LORA_DIO3 RADIOLIB_NC
 
 #endif

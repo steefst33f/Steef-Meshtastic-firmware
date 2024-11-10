@@ -20,8 +20,8 @@
 // #define BUTTON_PIN 0
 
 // GPS
-// #define GPS_RX_PIN 18
-// #define GPS_TX_PIN 17
+#define GPS_RX_PIN 1
+#define GPS_TX_PIN 2
 
 // #define HAS_SDCARD 1
 // #define SPI_MOSI 13

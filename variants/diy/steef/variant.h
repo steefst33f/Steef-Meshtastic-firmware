@@ -19,6 +19,11 @@
 // Button
 // #define BUTTON_PIN 0
 
+// Keyboard
+#define I2C_SDA 8
+#define I2C_SCL 9
+#define CANNED_MESSAGE_MODULE_ENABLE 1
+
 // GPS
 #define GPS_RX_PIN 1
 #define GPS_TX_PIN 2
@@ -41,9 +46,9 @@
 #define LORA_SCK 12
 #define LORA_MISO 13
 #define LORA_MOSI 11
-#define LORA_CS 9
+#define LORA_CS 16
 
-#define LORA_RESET 8
+#define LORA_RESET 15
 #define LORA_DIO0 3 // IRQ
 #define LORA_DIO1 18 //RADIOLIB_NC?
 #define LORA_DIO2 RADIOLIB_NC  //NC?
